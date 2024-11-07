@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args)
     {
-        /*  Introduction and TODO List
+        /*  Introduction and to do list
 jhasfkjhasjfasjfjsajfkasjkfjasfjkasjkfajksfjasjkfasjfhsafjkasjfaskjfkjasfkjsakjfas
         This project is setup with four main classes:
             1. App - the main application
