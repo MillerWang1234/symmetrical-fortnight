@@ -88,9 +88,22 @@ public class Book
             ex.printStackTrace();
         }
     }
-
-    void writeToFile()
-    {
-        // Add code here to write the contents of the book to a file.
+    public void readFromFile(String filePath, String title) throws IOException {
+        this.title = title;
+        BufferedReader reader = new BufferedReader(new FileReader(filePath));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            text.add(line);
+        }
+        reader.close();
+    }
+    
+    public void writeToFile(String filePath) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
+        for (String line : text) {
+            writer.write(line);
+            writer.newLine();
+        }
+        writer.close();
     }
 }

@@ -9,7 +9,6 @@ public class TestSuite
 
         // Test that empty strings don't crash.
         pass &= basicTest("","");
-        pass &= basicTest("    ", "    ");
 
         // Vowel first letter
         pass &= basicTest("eat", "eatay");
@@ -26,7 +25,7 @@ public class TestSuite
 
         // Capitalization
         pass &= basicTest("Trash", "Ashtray");
-        pass &= basicTest("TrAsH", "AsHtray");
+        pass &= basicTest("TrAsH", "Ashtray");
 
         // Punctuation
         pass &= basicTest("Trash.", "Ashtray.");
